@@ -21,15 +21,69 @@
 /* BASE STYLES
 /*******************************************/
 
-body {}
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+body {
+    background: #110804;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {}
+.navbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5% 7%;
+}
 
-footer {}
+.navbar-left {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.nav-item:hover,
+.nav-item.active {
+    border-bottom: 0.15rem solid #E9C883;
+}
+
+.navbar-link {
+    font-size: 0.825rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.navbar-middle {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-middle svg {
+    fill: #E9C883;
+    width: 3rem;
+}
+
 
 /******************************************
 /* ADDITIONAL STYLES
