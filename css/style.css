@@ -43,48 +43,113 @@ a {
 /******************************************
 /* LAYOUT
 /*******************************************/
+
+/* NAVBAR */
+
 .navbar {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 2.5% 7%;
+    padding: 2.5% 6%;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
 
 .navbar-left {
+    align-items: center;
     display: flex;
-    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    fill: #E8CA87;
+    width: 2.75rem;
+}
+
+.navbar-brand {
+    color: #E8CA87;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.navbar-right {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2.25rem;
     justify-content: space-between;
 }
 
 .nav-item:hover,
 .nav-item.active {
-    border-bottom: 0.15rem solid #E9C883;
+    border-bottom: 0.15rem solid #E8CA87;
 }
 
 .navbar-link {
-    font-size: 0.825rem;
+    font-size: 0.9rem;
+}
+
+.navbar-order {
+    border: solid 0.075rem #E8CA87;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    margin-left: 2.25rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.25s ease-in-out;
+}
+
+.navbar-order:hover {
+    background: #E8CA87;
+    color: #110804;
 }
 
 .hamburger {
-    display: none;
-}
-
-.mobile-menu {
-    display: none;
-}
-
-.navbar-middle {
     align-items: center;
-    display: flex;
-    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    padding: 0.5rem;
+    z-index: 1002;
 }
 
-.navbar-middle svg {
-    fill: #E9C883;
-    width: 3rem;
+.hamburger-line {
+    background: #E8CA87;
+    border-radius: 1.2rem;
+    height: 0.188rem;
+    margin: 0.188rem 0;
+    transition: all 0.3s ease;
+    transform-origin: center;
+    width: 2.5rem;
 }
 
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+/* FOR TABLETS */
+
+@media screen and (max-width: 992px) {
+    .navbar {
+        padding: 2.5% 9%;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .navbar-order {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
