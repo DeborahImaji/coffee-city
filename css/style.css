@@ -226,7 +226,7 @@ a {
 
 @media screen and (max-width: 500px) {
     html {
-        font-size: 70%;
+        font-size: 75%;
     }
 
     .navbar {
