@@ -186,14 +186,29 @@ a {
     border-bottom: 0.35rem solid #E8CA87;
 }
 
+
+/* HOME */
+.home {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding: 5.75rem 5rem 0 5rem;
+}
+
+.home-heading {
+    font-size: 2.5rem;
+}
+
+.home-img {
+    width: 10rem;
+}
+
 /* WILL REMOVE LATER */
 
 .section {
     height: 40rem;
-}
-
-.home {
-    padding-top: 10rem;
 }
 
 
