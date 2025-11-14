@@ -21,8 +21,8 @@
 /* BASE STYLES
 /*******************************************/
 
-.montserrat {
-    font-family: "Montserrat", sans-serif;
+.lexend-deca {
+    font-family: "Lexend Deca", sans-serif;
     font-optical-sizing: auto;
     font-weight: 100 900;
     font-style: normal;
@@ -31,7 +31,16 @@
 body {
     background: #110804;
     color: #FFFFFF;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+span {
+    margin: 0;
 }
 
 a {
@@ -191,18 +200,50 @@ a {
 .home {
     align-items: center;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     height: 100vh;
     padding: 5.75rem 5rem 0 5rem;
 }
 
-.home-heading {
-    font-size: 2.5rem;
+.home-img {
+    width: 30rem;
 }
 
-.home-img {
-    width: 10rem;
+.home-heading {
+    font-size: 3rem;
+    line-height: 3.75rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.home-desc {
+    font-size: 1.15rem;
+    font-weight: 250;
+    line-height: 2.15rem;
+    text-align: center;
+}
+
+.home-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1.75rem 0;
+}
+
+.home-links a {
+    border: solid 0.075rem #E8CA87;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.home-links a:first-child {
+    background: linear-gradient(to right, #85551D, #110804, #85551D, #85551D);
+}
+
+.home-links a:hover {
+    transform: scale(1.05);
 }
 
 /* WILL REMOVE LATER */
